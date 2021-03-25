@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>Solve Your Problems</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="user_login.css">
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+    </head>
+    <body>
+        <button onclick="back();" class="btn btn-danger" style="font-size: 17px;margin-top: 10px;width: 100px;margin-left: 10px;border-radius: 8px;">Back <img style="float: none;" class="image-responsive" src="return-button-png-6.png"></button>
+        <button class="btn btn-success" style="font-size: 15px;width: fit-content;margin-top: 10px;margin-left: 10px;border-radius: 8px;float: right;" onclick="login_show();">Login</button>
+        <button class="btn btn-info" style="font-size: 15px;width: fit-content;margin-top: 10px;margin-left: 10px;border-radius: 8px;float: right;" onclick="signup_show();">Sign Up</button>
+        <center>
+            <div id="signup_div">
+                <span style="font-size: 30px; font-weight: bold;">UserId&nbsp;<input style="font-size: 20px;" id="userId" placeholder="Please enter your UserId"></span>
+                <br><br>
+                <span style="font-size: 30px; font-weight: bold;">Password&nbsp;<input style="font-size: 20px;" id="password" placeholder="Please enter your Password"></span>
+                <br><br>
+                <span style="font-size: 30px; font-weight: bold;">Country&nbsp;<input style="font-size: 20px;" id="country" placeholder="Please enter your Country"></span>
+                <br><br>
+                <span style="font-size: 30px; font-weight: bold;">State&nbsp;<input style="font-size: 20px;" id="state" placeholder="Please enter your State"></span>
+                <br><br>
+                <span style="font-size: 30px; font-weight: bold;">District&nbsp;<input style="font-size: 20px;" id="district" placeholder="Please enter your District"></span>
+                <br><br>
+                <span style="font-size: 30px; font-weight: bold;">Town/Village&nbsp;<input style="font-size: 20px;" id="townVillage" placeholder="Please enter your Town/Village"></span>
+                <br><br>
+                <span style="font-size: 30px; font-weight: bold;">Street/Nagar&nbsp;<input style="font-size: 20px;" id="streetNagar" placeholder="Please enter your Street/Nagar"></span>
+                <br><br>
+                <span style="font-size: 30px; font-weight: bold;">Building/Tower&nbsp;<input style="font-size: 20px;" id="buildingTower" placeholder="Please enter your Building/Tower"></span>
+                <br><br>
+                <span style="font-size: 30px; font-weight: bold;">Block&nbsp;<input style="font-size: 20px;" id="block" placeholder="Please enter your Block"></span>
+                <br><br>
+                <span style="font-size: 30px; font-weight: bold;">House Number&nbsp;<input type="number" style="font-size: 20px;" id="houseNumber" placeholder="Please enter your House Number"></span>
+                <br><br>
+                <span style="font-size: 30px; font-weight: bold;">Pin Code&nbsp;<input type="number" style="font-size: 20px;" id="pinCode" placeholder="Please enter your Pin Code"></span>
+                <br><h1>If there is only one block in your Building just type 1</h1><br><button class="btn btn-info" style="font-size: 30px;width: fit-content;margin-top: 10px;margin-left: 10px;border-radius: 8px;"onclick="signup();">Sign Up</button>
+            </div>
+            <div style="display: none;" id="login_div"><span style="font-size: 30px; font-weight: bold;">UserId&nbsp;<input style="font-size: 20px;" id="user" placeholder="Please enter your UserId"></span>
+                <br><br>
+                <span style="font-size: 30px; font-weight: bold;">Password&nbsp;<input style="font-size: 20px;" id="pass" placeholder="Please enter your Password"></span><br><br><button class="btn btn-success" style="font-size: 30px;width: fit-content;margin-top: 10px;margin-left: 10px;border-radius: 8px;" onclick="login();">Login</button></div>
+        </center>
+        <script src="user_login.js"></script>
+    </body>
+</html>    

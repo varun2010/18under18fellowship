@@ -1,0 +1,16 @@
+body{
+    background-color: turquoise;
+    padding: 1%;
+}
+img{
+    width: 50%;
+}
+#output
+{
+	padding: 10px; width:80%;background: rgba(255,255,255,0.8);border-radius: 15px;
+}
+.message{
+    background-color: blueviolet;
+    color: cyan;
+    padding: 1%;
+}

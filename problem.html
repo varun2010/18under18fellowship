@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Solve Your Problems</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="problem.css">
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+    </head>
+    <body>
+        <button onclick="logout();" class="btn btn-danger" style="font-size: 17px;margin-top: 10px;width: 135px;margin-left: 10px;border-radius: 8px;">Log out <img style="float: none;" class="image-responsive" src="return-button-png-6.png"></button>
+        <br><br>
+        <span>What kind of problem do you have
+        <select id="problem">
+            <option>Electrical</option>
+            <option>Water</option>
+            <option>Security</option>
+            <option>Cleanliness</option>
+            <option>Amenities</option>
+            <option>Medical</option>
+            <option>Missing</option>
+            <option>Elevator</option>
+            <option>Parking</option>
+            <option>Others</option>
+        </select></span>
+        <br>
+        <textarea id="note" placeholder="Write a note on your problem"></textarea>
+        <br><br><center><button style="font-size: 20px;" onclick="send();">Send</button></center>
+        <br>
+        <script src="problem.js"></script>
+    </body>
+</html>

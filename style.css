@@ -1,0 +1,32 @@
+body{
+    background-color: turquoise;
+}
+.heading{
+    font-size: 40px;
+    color: goldenrod;
+    font-weight: 800;
+    background-color: darkblue;
+    width: fit-content;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px 5px darkcyan;
+    border-style: solid;
+    border-width: 7px;
+    border-color: blueviolet;
+}
+.contain{
+    padding-top: 5px;
+    padding-bottom: 20px;
+    border-radius: 50px;
+    margin: 10px;
+    margin-top:280;
+    margin-bottom:50;
+}
+h1{
+    background-color: cyan;
+     color: darkgoldenrod;
+     font-weight: bold;;
+}
+img{
+    width: 75%;
+}
